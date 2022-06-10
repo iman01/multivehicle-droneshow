@@ -1,3 +1,11 @@
+To install and building the PX4 toolchain:
+```bash
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+cd /path/to/PX4-Autopilot
+make px4_sitl gazebo
+```
+
 Add the following lines to `PX4-AUTOPILOT/ROMFS/px4fmu_common/init.d-posix/rcS`:
 
 ```bash
