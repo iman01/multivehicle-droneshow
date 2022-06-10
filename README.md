@@ -2,8 +2,6 @@ To install and building the PX4 toolchain:
 ```bash
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
-cd /path/to/PX4-Autopilot
-make px4_sitl gazebo
 ```
 
 Add the following lines to `PX4-AUTOPILOT/ROMFS/px4fmu_common/init.d-posix/rcS`:
@@ -12,8 +10,14 @@ Add the following lines to `PX4-AUTOPILOT/ROMFS/px4fmu_common/init.d-posix/rcS`:
 param set NAV_RCL_ACT 1
 param set COM_RCL_EXCEPT 4
 ```
+To building the PX4 toolchain:
 
-To spawn 10 drones in SITl:
+```bash
+cd /path/to/PX4-Autopilot
+make px4_sitl gazebo
+```
+
+To spawn 10 drones in SITL:
 ```bash
 Tools/gazebo_sitl_multiple_run.sh -n 10
 ```
