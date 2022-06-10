@@ -5,7 +5,7 @@ param set NAV_RCL_ACT 1
 param set COM_RCL_EXCEPT 4
 ```
 <br/>
-To spawn 10 drones in SITL:
+To spawn 10 drones in SITl:
 ```
 Tools/gazebo_sitl_multiple_run.sh -n 10
 ```
